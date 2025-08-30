@@ -1,0 +1,16 @@
+title Login
+
+participant app
+participant backend
+participant jwt
+participant database
+
+app->backend: consume [POST] /api/user/login
+backend->backend: realiza validaciones\nsobre reglas de negocio
+backend->jwt:valida si esta todo ok
+jwt-->backend: devuelve token
+backend->database:solicita validar el otp_token enviado\ncontra otp_tokens.token
+database-->backend: ok
+backend->database: solicita actualizar users.last_login_at
+database-->backend: ok
+backend-->app: devuelve token
