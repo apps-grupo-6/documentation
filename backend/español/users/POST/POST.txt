@@ -1,0 +1,15 @@
+title Registro
+
+participant app
+participant backend
+participant database
+participant notifier
+
+app->backend: consume [POST] /api/user/
+backend->backend: realiza validaciones\nsobre reglas de negocio
+backend->backend: hashea la pw
+backend->database: solicita insertar el registro
+database-->backend: ok
+backend->notifier: envia notificacion al contact_email del usuario
+notifier-->backend: ok
+backend-->app: ok
