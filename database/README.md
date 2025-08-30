@@ -4,7 +4,10 @@ https://dbdiagram.io/d/APPs-1-gym-68b30569777b52b76c49f0ee
 
 ## Offline preview / Previsualización offline
 ### English
-Just take a look at Diagram.pdf, it is the same as the online document. If needed, you also could check all relationships here. 
+Just take a look at Diagram.pdf, it is the same as the online preview. If needed, you also could check all relationships here. 
+
+### Español
+Revisa Diagram.pdf, es lo mismo que la preview online. En caso de ser necesario, acá también podes ver todas las relaciones.
 
 ## Relationships / Relaciones: 
 ### English
